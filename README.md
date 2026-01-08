@@ -1,5 +1,5 @@
 # VIMSUAL STUDIO CODE
--# the worst nvim config youll ever see :3
+the worst nvim config youll ever see :3
 
 Ever wanted to use neovim without using neovim?
 Youre in luck because thats exactly what this config does :3
