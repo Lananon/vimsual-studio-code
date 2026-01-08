@@ -1,1 +1,5 @@
-vim.keymap.set("i", "<C-e>", "<C-o>gcc>")
+vim.keymap.set("i", "<C-BS>", "<C-w>")
+vim.keymap.set("i", "<C-Del>", "<C-o>dw")
+vim.keymap.set("i", "<C-q>", "<C-o>:qa<CR>")
+vim.keymap.set("i", "<C-s>", "<C-o>:w<CR>")
+vim.keymap.set("i", "<C-e>", "<C-o>:norm gcc<CR>", {remap = true})
