@@ -22,7 +22,7 @@ return {
     config = function(_, opts)
         require("mason").setup()
 	require("mason-lspconfig").setup({
-            ensure_installed = {"lua_ls", "gopls"}
+            ensure_installed = {"lua_ls", "pyright"}
         })
 
 	for server, config in pairs(opts.servers) do
