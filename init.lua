@@ -20,6 +20,6 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 require("nvim-treesitter").install({ "python", "go", "rust", "c", "cpp", "zig", "lua"})
 
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { '*' },
+  pattern = { '*.py', "*.lua", "*.go" },
   callback = function() vim.treesitter.start() end,
 })
