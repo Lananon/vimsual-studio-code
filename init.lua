@@ -1,8 +1,6 @@
 require("config.lazy")
 require("config.keymaps")
 
-
-
 require("catppuccin").setup({
 	flavour = "mocha"})
 vim.cmd.colorscheme "catppuccin"
@@ -19,3 +17,8 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 
 require("nvim-treesitter").install({ "python", "go", "rust", "c", "cpp", "zig", "lua"})
 
+vim.opt.smartindent = false
+
+-- mode shit
+
+-- vim.cmd("source ~/ports/helix.vim/helix.vim")
