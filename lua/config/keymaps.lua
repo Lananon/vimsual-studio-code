@@ -9,6 +9,8 @@ vim.keymap.set("i", "<C-e>", "<C-o>:norm gcc<CR>", {remap = true})
 vim.keymap.set("n", "j", "gj")
 vim.keymap.set("n", "k", "gk")
 vim.keymap.set("n", "<Esc>", ":noh<CR><Esc>")
-
+vim.keymap.set("n", "gd",function ()
+  vim.lsp.buf.definition()
+end)
 -- functions
 
