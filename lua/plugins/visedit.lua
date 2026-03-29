@@ -1,4 +1,4 @@
 return {
   "Lananon/visedit.nvim",
-  opts = {}
+  opts = {use_vis_movement = false}
 }

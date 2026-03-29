@@ -3,11 +3,11 @@ require("config.keymaps")
 
 require("catppuccin").setup({
 	flavour = "mocha"})
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "catppuccin-nvim"
 
 vim.wo.number = true
 vim.wo.relativenumber = true
-vim.cmd("Neotree")
+-- vim.cmd("Neotree")
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
@@ -17,12 +17,14 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 
 require("nvim-treesitter").install({ "python", "go", "rust", "c", "cpp", "zig", "lua"})
 
+
 vim.opt.smartindent = false
+vim.opt.fillchars:append({ eob = " " })
 
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'catppuccin',
+    theme = 'catppuccin-nvim',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {

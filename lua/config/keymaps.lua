@@ -6,11 +6,14 @@ vim.keymap.set("i", "<C-s>", "<C-o>:w<CR>")
 vim.keymap.set("i", "<C-e>", "<C-o>:norm gcc<CR>", {remap = true})
 
 -- general useful shit
-vim.keymap.set("n", "j", "gj")
-vim.keymap.set("n", "k", "gk")
+-- vim.keymap.set("n", "j", "gj")
+-- vim.keymap.set("n", "k", "gk")
 vim.keymap.set("n", "<Esc>", ":noh<CR><Esc>")
-vim.keymap.set("n", "gd",function ()
+vim.keymap.set("n", "<leader>d",function ()
   vim.lsp.buf.definition()
+end)
+vim.keymap.set("n", "<leader>k", function ()
+  vim.lsp.buf.hover()
 end)
 -- functions
 
